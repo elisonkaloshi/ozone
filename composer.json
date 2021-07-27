@@ -1,0 +1,18 @@
+{
+    "name": "elison/ozone",
+    "description": "A package that manage ip addresses on Laravel Framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elison\\Ozone\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elison Kaloshi",
+            "email": "elisonkaloshi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
