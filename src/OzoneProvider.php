@@ -13,6 +13,6 @@ class OzoneProvider extends ServiceProvider
 
     public function register()
     {
-
+        //
     }
 }
