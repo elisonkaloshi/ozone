@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUnauthorisedIpLogsTable extends Migration
+class CreateUnauthorizedIpLogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateUnauthorisedIpLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('unauthorised_ip_logs', function (Blueprint $table) {
+        Schema::create('unauthorized_ip_logs', function (Blueprint $table) {
             $table->id();
             $table->string('ip');
             $table->timestamps();
