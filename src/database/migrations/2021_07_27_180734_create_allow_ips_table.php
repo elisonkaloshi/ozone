@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAllowIpsTable extends Migration
+class CreateAllowedIpsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAllowIpsTable extends Migration
      */
     public function up()
     {
-        Schema::create('allow_ips', function (Blueprint $table) {
+        Schema::create('allowed_ips', function (Blueprint $table) {
             $table->id();
             $table->string('ip');
             $table->string('title');

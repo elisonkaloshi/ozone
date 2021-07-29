@@ -3,20 +3,20 @@
 namespace Elison\Ozone\Http\Middleware;
 
 use Closure;
-use Elison\Ozone\Models\AllowIp;
-use Elison\Ozone\Models\Log;
+use Elison\Ozone\Models\AllowedIp;
+use Elison\Ozone\Models\UnauthorizedIpLog;
 use \Request;
 
 class OzoneMiddleware
 {
     public function handle($request, Closure $next)
     {
-        $allowedIps = AllowIp::pluck('ip')->toArray();
+        $allowedIps = AllowedIp::pluck('ip')->toArray();
 
         $currentIp = Request::getClientIp();
 
         if (! in_array($currentIp, $allowedIps)) {
-            Log::create([
+            UnauthorizedIpLog::create([
                 'ip' => $currentIp
             ]);
 
