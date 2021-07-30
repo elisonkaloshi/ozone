@@ -28,6 +28,6 @@ class CreateAllowedIpsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('allow_ips');
+        Schema::dropIfExists('allowed_ips');
     }
 }

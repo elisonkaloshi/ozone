@@ -27,6 +27,6 @@ class CreateUnauthorizedIpLogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logs');
+        Schema::dropIfExists('unauthorized_ip_logs');
     }
 }
